@@ -1,0 +1,71 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- job_seeker
+- recruiter
+- python_developer
+- python_developer_jd
+- java_developer
+- apply
+- url_link
+responses:
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_jobseeker_recruiter:
+  - buttons:
+    - payload: /job_seeker
+      title: Job seeker?
+    - payload: /recruiter
+      title: Recruiter?
+    text: Are you a
+  utter_ask_resume_link:
+  - text: Please share your resume link from google drive
+  utter_thank_you_upload_resume:
+  - text: Thank you for uploading your profile with us
+  utter_thank_for_apply:
+  - text: Thank you for applying job, we will contact you soon
+  utter_find_below_jobs:
+  - buttons:
+    - payload: /python_developer
+      title: Python Developer
+    - payload: /java_developer
+      title: Java Developer
+    text: Please find below jobs
+  utter_ask_jd:
+  - text: Ok, can i have job description
+  utter_find_below_resumes:
+  - text: Please find below Resumes related to your job description https://docs.google.com/document/d/11tk5u3JKovcB1kBXDxVUHCnFQxnXDefMtm36t4TIsW8/edit
+      https://docs.google.com/document/d/1VkcQeojbWW1mUNy3v5E0hZJhLMZD4nssJgB93zxRGb0/edit
+  utter_apply_below_jobs:
+  - buttons:
+    - payload: /apply
+      title: Apply
+    text: Work experience as a Python Developer Expertise in at least one popular
+      Python framework (like Django, Flask or Pyramid) Knowledge of object-relational
+      mapping (ORM) Familiarity with front-end technologies (like JavaScript and HTML5)
+      Team spirit Good problem-solving skills BSc in Computer Science, Engineering
+      or relevant field
+  - buttons:
+    - payload: /apply
+      title: Apply
+    text: Work experience as a Python Developer Expertise in at least one popular
+      Python framework Fastapi Knowledge of object-relational mapping (ORM) Familiarity
+      with front-end technologies (like React and HTML5) Team spirit and having Computer
+      Science, Engineering

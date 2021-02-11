@@ -1,0 +1,53 @@
+version: "2.0"
+stories:
+- story: job seeker happy path
+  steps:
+  - intent: greet
+  - action: utter_jobseeker_recruiter
+  - intent: job_seeker
+  - action: utter_ask_resume_link
+  - intent: url_link
+  - action: utter_thank_you_upload_resume
+  - action: utter_find_below_jobs
+  - action: utter_apply_below_jobs
+  - action: utter_thank_for_apply
+
+- story: job seeker happy path
+  steps:
+  - intent: greet
+  - action: utter_jobseeker_recruiter
+  - intent: job_seeker
+  - action: utter_ask_resume_link
+  - intent: url_link
+  - action: utter_thank_you_upload_resume
+  - action: utter_find_below_jobs
+  - action: utter_apply_below_jobs
+  - action: utter_thank_for_apply
+
+- story: recruiter happy path
+  steps:
+  - intent: greet
+  - action: utter_jobseeker_recruiter
+  - intent: recruiter
+  - action: utter_ask_jd
+  - intent: python_developer_jd
+  - action: utter_find_below_resumes
+
+- story: recruiter happy path
+  steps:
+  - intent: greet
+  - action: utter_jobseeker_recruiter
+  - intent: recruiter
+  - action: utter_ask_jd
+  - intent: python_developer_jd
+  - action: utter_find_below_resumes
+  
+- story: Story from Conversation ID 5b2370ffaf6f4e0cbe59339089ea987f
+  steps:
+  - intent: greet
+  - action: utter_jobseeker_recruiter
+  - intent: recruiter
+  - action: utter_ask_jd
+  - intent: python_developer_jd
+  - action: utter_find_below_resumes
+
